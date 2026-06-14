@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-label="Web Vulnerabilities Checklist — 27 attack-class playbooks for bug bounty hunters and pentesters">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f17"/>
+      <stop offset="100%" stop-color="#11161f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ee787"/>
+      <stop offset="50%" stop-color="#79c0ff"/>
+      <stop offset="100%" stop-color="#d2a8ff"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="0.5" opacity="0.6"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1200" height="3" fill="url(#accent)"/>
+  <rect x="0" y="317" width="1200" height="3" fill="url(#accent)"/>
+
+  <g transform="translate(60, 70)" font-family="ui-monospace, 'JetBrains Mono', 'Cascadia Code', Menlo, Consolas, monospace">
+    <text x="0" y="0" fill="#7ee787" font-size="16" font-weight="500">$ grep -r "vulnerability" ./web/</text>
+
+    <text x="0" y="60" fill="#e6edf3" font-size="48" font-weight="700" letter-spacing="-1">
+      <tspan>Web Vulnerabilities</tspan>
+    </text>
+    <text x="0" y="105" fill="#e6edf3" font-size="48" font-weight="700" letter-spacing="-1">
+      <tspan>Checklist</tspan>
+      <tspan fill="#79c0ff"> //</tspan>
+      <tspan fill="#d2a8ff"> 27 Playbooks</tspan>
+    </text>
+
+    <text x="0" y="145" fill="#7d8590" font-size="18" font-weight="400">
+      IDOR · SSRF · XSS · SQLi · RCE · XXE · CSRF · OAuth · JWT · 2FA bypass · file upload · mass assignment · SSTI
+    </text>
+
+    <g transform="translate(0, 175)">
+      <rect x="0" y="0" width="155" height="32" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="77" y="21" fill="#7ee787" font-size="13" text-anchor="middle">bug-bounty</text>
+
+      <rect x="165" y="0" width="115" height="32" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="222" y="21" fill="#79c0ff" font-size="13" text-anchor="middle">pentesting</text>
+
+      <rect x="290" y="0" width="125" height="32" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="352" y="21" fill="#d2a8ff" font-size="13" text-anchor="middle">OWASP Top 10</text>
+
+      <rect x="425" y="0" width="115" height="32" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="482" y="21" fill="#ffa657" font-size="13" text-anchor="middle">HackerOne</text>
+
+      <rect x="550" y="0" width="105" height="32" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="602" y="21" fill="#f85149" font-size="13" text-anchor="middle">Bugcrowd</text>
+
+      <rect x="665" y="0" width="90" height="32" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="710" y="21" fill="#7ee787" font-size="13" text-anchor="middle">red-team</text>
+    </g>
+  </g>
+
+  <g transform="translate(900, 70)" font-family="ui-monospace, 'JetBrains Mono', 'Cascadia Code', Menlo, Consolas, monospace" filter="url(#glow)">
+    <rect x="0" y="0" width="240" height="180" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+    <circle cx="16" cy="16" r="5" fill="#f85149"/>
+    <circle cx="34" cy="16" r="5" fill="#d29922"/>
+    <circle cx="52" cy="16" r="5" fill="#7ee787"/>
+
+    <text x="16" y="58" fill="#7d8590" font-size="11">~/checklist $</text>
+    <text x="16" y="80" fill="#79c0ff" font-size="11">cat 27_categories.txt</text>
+    <text x="16" y="104" fill="#7ee787" font-size="11">+ 27 attack classes</text>
+    <text x="16" y="122" fill="#7ee787" font-size="11">+ 1000+ payloads</text>
+    <text x="16" y="140" fill="#7ee787" font-size="11">+ 50+ CVE references</text>
+    <text x="16" y="158" fill="#d2a8ff" font-size="11">[OK] ready to hunt_</text>
+  </g>
+</svg>
